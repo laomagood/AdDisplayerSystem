@@ -1,7 +1,7 @@
 # AdDisplayerSystem
 多媒体信息发布系统
 
-1. 使用了QtAv，请按次方法: https://www.jianshu.com/p/2776b08c3e54
+1. 使用了QtAv，请按此方法: https://www.jianshu.com/p/2776b08c3e54
 
 2. 登陆账号：0 密码：0
 
