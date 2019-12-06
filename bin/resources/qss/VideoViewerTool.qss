@@ -1,0 +1,73 @@
+QLabel {
+color: rgb(255, 255, 255);
+}
+
+/*播放暂停*/
+#PlayPauseBtn {
+    border-image: url("./image/VideoViewerTool/play.png");
+}
+#PlayPauseBtn:hover {
+    border-image: url("./image/VideoViewerTool/play-hover.png");
+}
+#PlayPauseBtn:pressed {
+    border-image: url("./image/VideoViewerTool/play-pressed.png");
+}
+#PlayPauseBtn:checked {
+    border-image: url("./image/VideoViewerTool/pause.png");
+}
+#PlayPauseBtn:checked:hover {
+    border-image: url("./image/VideoViewerTool/pause-hover.png");
+}
+#PlayPauseBtn:checked:pressed {
+    border-image: url("./image/VideoViewerTool/pause-pressed.png");
+}
+
+/*声音静音*/
+#VolumeBtn {
+    border-image: url("./image/VideoViewerTool/volume.png");
+}
+#VolumeBtn:hover {
+    border-image: url("./image/VideoViewerTool/volume-hover.png");
+}
+#VolumeBtn:pressed {
+    border-image: url("./image/VideoViewerTool/volume-pressed.png");
+}
+#VolumeBtn:checked {
+    border-image: url("./image/VideoViewerTool/mute.png");
+}
+#VolumeBtn:checked:hover {
+    border-image: url("./image/VideoViewerTool/mute-hover.png");
+}
+#VolumeBtn:checked:pressed {
+    border-image: url("./image/VideoViewerTool/mute-pressed.png");
+}
+
+/*播放进度*/
+/*首先是设置主体*/
+QSlider {
+    border-color: #bcbcbc;
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 1px;
+    margin: 0px 0;
+    left: 2px; right: 2px;
+}
+
+/*设置中间的那个滑动的键*/
+QSlider::handle:horizontal {
+    border: 0px;
+    border-image:  url("./image/VideoViewerTool/Slider-handle.png");
+    width: 15px;
+    margin: -7px -5px -7px -7px;
+}
+/*还没有滑上去的地方*/
+QSlider::add-page:horizontal{
+    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #bcbcbc, stop:0.25 #bcbcbc, stop:0.5 #bcbcbc, stop:1 #bcbcbc);
+}
+/*已经划过的从地方*/
+QSlider::sub-page:horizontal{
+    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #439cf3, stop:0.25 #439cf3, stop:0.5 #439cf3, stop:1 #439cf3);
+}
+

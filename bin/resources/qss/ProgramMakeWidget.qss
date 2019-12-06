@@ -1,0 +1,7 @@
+/*Logo背景*/
+QToolBar {
+    background: rgb(40, 150, 230);
+    min-height: 50px;
+    max-height: 50px;
+}
+

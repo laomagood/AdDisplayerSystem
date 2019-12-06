@@ -1,0 +1,9 @@
+/*中心Frame*/
+#centreFrame {
+    background: rgb(255, 255, 255);
+    border:15px solid rgb(230, 230, 230);
+}
+
+/*#centreDownFrame {
+    background: rgb(220, 220, 220);
+}*/

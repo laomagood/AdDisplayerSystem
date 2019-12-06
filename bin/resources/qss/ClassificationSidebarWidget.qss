@@ -1,0 +1,42 @@
+/*一级菜单*/
+.GroupButton {
+    color: rgb(115, 190, 255);
+    background: rgb(50, 65, 90);
+    border: 0px;
+    height: 37px;
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 7px;
+    qproperty-icon: url("./image/icon/programManagement/mainMenu.png");
+}
+
+.GroupButton:hover {
+    background: rgb(60, 90, 115);
+}
+
+.GroupButton:checked {
+    background: rgb(110, 140, 175);
+    qproperty-icon: url("./image/icon/programManagement/mainMenu-checked.png");
+}
+
+/*二级菜单*/
+.ItemButton {
+    color: rgb(70, 150, 255);
+    background: rgb(70, 85, 110);
+    border: 0px;
+    height: 37px;
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+.ItemButton:hover {
+    background: rgb(60, 90, 115);
+}
+
+.ItemButton:checked {
+    background: rgb(90, 115, 130);
+}
+

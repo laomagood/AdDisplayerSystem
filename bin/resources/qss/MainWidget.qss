@@ -1,0 +1,58 @@
+/*Logo背景*/
+.logoWidget {
+    background: rgb(0, 110, 185);
+    min-height: 50px;
+    max-height: 50px;
+    min-width: 250px;
+    max-width: 250px;
+    background-image: url("./image/mainWidget/logo.png");
+}
+
+/*工具栏颜色*/
+.topBarWidget {
+    background: rgb(0, 110, 185);
+    min-height: 50px;
+    max-height: 50px;
+}
+
+/*切换界面颜色*/
+.centralStackedWidget {
+    background: rgb(255, 255, 255);
+}
+
+/*组员按钮*/
+.ItemButton {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 13px;
+    border: 0px;
+    width: 120px;
+    height: 50px;
+}
+
+/*组员按钮-选中颜色*/
+.ItemButton:checked {
+    background: rgb(40, 150, 230);
+}
+
+/*按钮图片*/
+#itemButton1 {
+    qproperty-icon: url("./image/mainWidget/homepage.png");
+}
+#itemButton2 {
+    qproperty-icon: url("./image/mainWidget/program_production.png");
+}
+#itemButton3 {
+    qproperty-icon: url("./image/mainWidget/program_management.png");
+}
+#itemButton4 {
+    qproperty-icon: url("./image/mainWidget/material_management.png");
+}
+#itemButton5 {
+    qproperty-icon: url("./image/mainWidget/terminal_management.png");
+}
+#itemButton6 {
+    qproperty-icon: url("./image/mainWidget/setting.png");
+}
+
+

@@ -1,0 +1,76 @@
+/*系统名称*/
+LoginWidget #nameLabel {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/*logo*/
+LoginWidget #logoLabel {
+    background-image: url("./image/User/LoginWidget/logo.png");
+    padding-left: 20px;
+}
+/*公司*/
+LoginWidget #companyLabel {
+    color: rgb(180, 180, 180);
+    padding-right: 10px;
+}
+
+/*登陆widget*/
+LoginWidget #UserLoginWidget {
+    background-color: rgba(230, 250, 255, 50);
+    border-radius: 3px;
+    min-width: 265px;
+    max-width: 265px;
+    min-height: 265px;
+    max-height: 265px;
+}
+
+/*账户登陆*/
+LoginWidget #loginLabel {
+    color: rgb(235, 235, 235);
+    font-weight: bold;
+    font-size:  14px;
+/*    padding-left: 45px;*/
+}
+
+/*登陆按钮*/
+LoginWidget #loginButton {
+    background-color: rgb(50, 140, 240);
+    border-radius: 3px;
+    height: 35px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+LoginWidget #loginButton:hover {
+    background-color: rgb(70, 160, 250);
+}
+LoginWidget #loginButton:pressed {
+    background-color: rgb(90, 180, 250);
+}
+LoginWidget #loginButton:focus {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/*账号密码*/
+LoginWidget #userLabel {
+    border-image: url("./image/User/LoginWidget/user.png");
+    min-width: 35px;
+}
+LoginWidget #passwordLabel {
+    border-image: url("./image/User/LoginWidget/password.png");
+    min-width: 35px;
+}
+
+LoginWidget #userLineEdit, #passwordLineEdit {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 3px;
+    height: 30px;
+    padding-left: 4px;
+    font-size: 13px;
+}
+LoginWidget #passwordLineEdit:focus, #userLineEdit:focus {
+    border-color: rgb(50, 140, 240);
+}

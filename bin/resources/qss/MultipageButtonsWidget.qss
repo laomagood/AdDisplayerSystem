@@ -1,0 +1,19 @@
+/*分组按钮*/
+QPushButton {
+    color: rgb(115, 190, 255);
+    background: rgb(50, 65, 90);
+    border: 5px;
+    height: 37px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*分组按钮-悬浮*/
+QPushButton:hover {
+    background: rgb(60, 90, 125);
+}
+
+/*分组按钮-选中*/
+QPushButton:checked {
+    background: rgb(100, 130, 165);
+}

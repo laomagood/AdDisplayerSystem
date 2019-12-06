@@ -1,11 +1,5 @@
 #include "gui/LoginWidget.h"
 #include "util/qtsingleapplication/qtsingleapplication.h"
-#include "gui/MaterialManagement/OpenFile/ImageViewerTool.h"
-#include "gui/HomePage/HomePageWeatherWidget.h"
-#include "gui/UserCornerMarker.h"
-#include "function/Weather.h"
-#include "util/TopWindow.h"
-#include "util/Util.h"
 #include <QApplication>
 #include <QDebug>
 #include <stdio.h>
