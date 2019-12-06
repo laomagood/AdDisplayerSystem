@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageViewerTool</class>
+ <widget class="QWidget" name="ImageViewerTool">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>711</width>
+    <height>497</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*工具栏*/
+#toolFrame{
+	background-color: rgba(0, 0, 0, 150);
+}
+/*关闭栏*/
+#titleFrame{
+	background-color: rgba(0, 0, 0, 150);
+}
+/*关闭*/
+#closeButton{
+	border-image: url(./image/ImageViewerTool/close.png);
+}
+#closeButton:hover{
+	border-image: url(./image/ImageViewerTool/close-hover.png);
+}
+#closeButton:pressed{
+	border-image: url(./image/ImageViewerTool/close-pressed.png);
+}
+/*上一张*/
+#previousButton{
+	border-image: url(./image/ImageViewerTool/PreviousImage.png);
+}
+#previousButton:hover{
+	border-image: url(./image/ImageViewerTool/PreviousImage-hover.png);
+}
+#previousButton:pressed{
+	border-image: url(./image/ImageViewerTool/PreviousImage-pressed.png);
+}
+/*下一张*/
+#nextButton{
+	border-image: url(./image/ImageViewerTool/NextImage.png);
+}
+#nextButton:hover{
+	border-image: url(./image/ImageViewerTool/NextImage-hover.png);
+}
+#nextButton:pressed{
+	border-image: url(./image/ImageViewerTool/NextImage-pressed.png);
+}
+/*保存*/
+#saveButton{
+	border-image: url(./image/ImageViewerTool/Save.png);
+}
+#saveButton:hover{
+	border-image: url(./image/ImageViewerTool/Save-hover.png);
+}
+#saveButton:pressed{
+	border-image: url(./image/ImageViewerTool/Save-pressed.png);
+}
+/*全屏退出*/
+#fullScreenButton{
+	border-image: url(./image/ImageViewerTool/fullScreen.png);
+}
+#fullScreenButton:hover{
+	border-image: url(./image/ImageViewerTool/fullScreen-hover.png);
+}
+#fullScreenButton:pressed{
+	border-image: url(./image/ImageViewerTool/fullScreen-pressed.png);
+}
+#fullScreenButton:checked{
+	border-image: url(./image/ImageViewerTool/ExitFullScreen.png);
+}
+#fullScreenButton:checked:hover{
+	border-image: url(./image/ImageViewerTool/ExitFullScreen-hover.png);
+}
+#fullScreenButton:checked:pressed{
+	border-image: url(./image/ImageViewerTool/ExitFullScreen-pressed.png);
+}
+/*放大*/
+#zoomInButton{
+	border-image: url(./image/ImageViewerTool/ZoomIn.png);
+}
+#zoomInButton:hover{
+	border-image: url(./image/ImageViewerTool/ZoomIn-hover.png);
+}
+#zoomInButton:pressed{
+	border-image: url(./image/ImageViewerTool/ZoomIn-pressed.png);
+}
+/*缩放值*/
+#zoomValueLabel{
+	font: 13pt &quot;微软雅黑&quot;;
+	color: rgb(255, 255, 255);
+}
+/*缩小*/
+#zoomOutButton{
+	border-image: url(./image/ImageViewerTool/ZoomOut.png);
+}
+#zoomOutButton:hover{
+	border-image: url(./image/ImageViewerTool/ZoomOut-hover.png);
+}
+#zoomOutButton:pressed{
+	border-image: url(./image/ImageViewerTool/ZoomOut-pressed.png);
+}
+/*1：1*/
+#zoom1to1Button{
+	border-image: url(./image/ImageViewerTool/Zoom1to1.png);
+}
+#zoom1to1Button:hover{
+	border-image: url(./image/ImageViewerTool/Zoom1to1-hover.png);
+}
+#zoom1to1Button:pressed{
+	border-image: url(./image/ImageViewerTool/Zoom1to1-pressed.png);
+}
+#zoom1to1Button:disabled{
+	border-image: url(./image/ImageViewerTool/Zoom1to1-disable.png);
+}
+/*右旋*/
+#rightHandedButton{
+	border-image: url(./image/ImageViewerTool/RightHanded.png);
+}
+#rightHandedButton:hover{
+	border-image: url(./image/ImageViewerTool/RightHanded-hover.png);
+}
+#rightHandedButton:pressed{
+	border-image: url(./image/ImageViewerTool/RightHanded-pressed.png);
+}
+/*信息*/
+#informationButton{
+	border-image: url(./image/ImageViewerTool/Information.png);
+}
+#informationButton:hover{
+	border-image: url(./image/ImageViewerTool/Information-hover.png);
+}
+#informationButton:checked                    {
+	border-image: url(./image/ImageViewerTool/Information-pressed.png);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>168</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="previousButton">
+       <property name="minimumSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>268</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="nextButton">
+       <property name="minimumSize">
+        <size>
+         <width>55</width>
+         <height>55</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>168</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>158</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QFrame" name="toolFrame">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>15</number>
+        </property>
+        <property name="leftMargin">
+         <number>15</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>15</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="saveButton">
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="fullScreenButton">
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="zoomOutButton">
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="zoomValueLabel">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>100%</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="zoomInButton">
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="zoom1to1Button">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="rightHandedButton">
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="informationButton">
+          <property name="minimumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>158</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
