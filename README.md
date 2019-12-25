@@ -1,5 +1,6 @@
 # AdDisplayerSystem
 多媒体信息发布系统
+演示地址：https://www.bilibili.com/video/av79690665
 
 1. 使用了QtAv，请按此方法: https://www.jianshu.com/p/2776b08c3e54
 
